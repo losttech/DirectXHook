@@ -1,10 +1,10 @@
 #include "DirectXHook.h"
-#include "Overlays/PauseEldenRing/PauseEldenRing.h"
+#include "Overlays/Example/Example.h"
 
 DirectXHook::DirectXHook()
 {
-	static PauseEldenRing pauseEldenRing;
-	SetRenderCallback(&pauseEldenRing);
+	static Example exampleHook;
+	SetRenderCallback(&exampleHook);
 }
 
 void DirectXHook::Hook()
